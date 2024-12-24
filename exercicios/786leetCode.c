@@ -143,15 +143,3 @@ int* kthSmallestPrimeFraction(int* arr, int arrSize, int k, int* returnSize)
     *returnSize = 2; // Define o tamanho do array
     return result;
 }
-
-int main()
-{
-    int arr[] = {1,13,17,59};
-    int arrSize = 4;
-    int k = 6;
-    int *returnSize = malloc(sizeof(int) * 2);
-
-    returnSize = kthSmallestPrimeFraction(arr, arrSize, k, returnSize);
-    printf("%d %d\n", returnSize[0], returnSize[1]);
-    return 0;
-}
